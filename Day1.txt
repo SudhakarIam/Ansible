@@ -10,5 +10,9 @@
 
 ansible -i <path-to-inventory-file> -m shell -a ""[Duptime" # -m for the module. -a is to specify attributes.
 
-ansible -i inventory.ini all[A[A[C[C[C[C[C[C[C[C[C[C[D[Dall i -m shell -a ""[Duptime" [3~# -m[2m [3~[3~[3~_>[->[B[B[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[Dl -m ping
+ansible -i inventory.ini all -m ping
+
+ansible -i inventory.ini all -a "uptime"
+
+ansbile -i inventory.ini all -m shell -a "cat /etc/hostname"
 
