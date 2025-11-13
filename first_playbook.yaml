@@ -1,0 +1,24 @@
+---
+
+- hosts: all
+  vars:
+    ansible_python_interpretor: /usr/bin/python3.12
+  become: true
+  tasks:
+    - name: Install httpd package
+      ansible.builtin.yum:
+        name:
+          - httpd
+          - httpd-tools
+        state: present
+    - name: Copyfiles
+      ansible.builtin.copy:
+          src: 2144_parallax_depth/
+          dest: /var/www/html
+          mode: 0755
+          owner: ec2-user
+          group: ec2-user
+    - name: service restart
+      ansible.builtin.service:
+        name: httpd
+        state: started
