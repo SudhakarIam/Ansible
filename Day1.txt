@@ -1,0 +1,14 @@
+#Control node - manage nodes.
+
+#Nodes must have python installed.
+
+#There must be passwordless authentication for the communication. Or you will have to provide credentials to login to manged nodes.
+
+# The default location for ansible inventory file is /etc/ansible/hosts . However, you can a crete an inventory file anywhere and provide -i paramenter to refer to the file.
+
+# Examples of ansible ad-hoc commands.
+
+ansible -i <path-to-inventory-file> -m shell -a ""[Duptime" # -m for the module. -a is to specify attributes.
+
+ansible -i inventory.ini all[A[A[C[C[C[C[C[C[C[C[C[C[D[Dall i -m shell -a ""[Duptime" [3~# -m[2m [3~[3~[3~_>[->[B[B[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[Dl -m ping
+
