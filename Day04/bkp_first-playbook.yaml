@@ -1,0 +1,8 @@
+---
+
+- hosts: all
+  vars:
+    ansible_python_interpretor: /usr/bin/python3.12
+  become: true
+  roles:
+    - test
